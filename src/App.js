@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import TodoList from './components/TodoList.jsx';
+import TodoForm from './components/TodoForm.jsx';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    fetch('/dummydata.json')
+      .then(response => response.json())
+      .then(data => setTasks(data));
+  }, []);
+
+  const addTask = (task) => {
+    setTasks([
+      ...tasks,
+      { ...task, id: tasks.length + 1, completed: false, timestamp: new Date().toISOString() }
+    ]);
+  };
+
+  const updateTask = (id) => {
+    setTasks(tasks.map(task =>
+      task.id === id ? { ...task, completed: !task.completed } : task
+    ));
+  };
+
+  const deleteTask = (id) => {
+    setTasks(tasks.filter(task => task.id !== id));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Todo List</h1>
+      <TodoForm onAdd={addTask} />
+      <TodoList tasks={tasks} onUpdate={updateTask} onDelete={deleteTask} />
     </div>
   );
-}
+};
 
 export default App;
