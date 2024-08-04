@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "title": "Complete React Project",
+      "description": "Finish implementing the frontend features for the React project.",
+      "completed": false,
+      "timestamp": "2024-08-01T09:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Review Code",
+      "description": "Go through the recent code changes and provide feedback.",
+      "completed": false,
+      "timestamp": "2024-08-02T11:00:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Update Documentation",
+      "description": "Update the project documentation with the latest changes.",
+      "completed": false,
+      "timestamp": "2024-07-30T14:45:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Prepare for Presentation",
+      "description": "Prepare slides and practice for the upcoming presentation.",
+      "completed": false,
+      "timestamp": "2024-08-03T16:00:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Fix Bug in Authentication",
+      "description": "Investigate and resolve the bug related to user authentication.",
+      "completed": false,
+      "timestamp": "2024-07-29T10:20:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Plan Next Sprint",
+      "description": "Plan the tasks and objectives for the next sprint.",
+      "completed": false,
+      "timestamp": "2024-08-04T13:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Set Up CI/CD Pipeline",
+      "description": "Configure the CI/CD pipeline for automatic deployments.",
+      "completed": false,
+      "timestamp": "2024-08-05T08:30:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Research New Technologies",
+      "description": "Look into new technologies and tools that could benefit the project.",
+      "completed": false,
+      "timestamp": "2024-08-06T09:15:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Optimize Performance",
+      "description": "Work on optimizing the performance of the application.",
+      "completed": false,
+      "timestamp": "2024-07-31T15:00:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Review Security Measures",
+      "description": "Review and enhance the security measures in the application.",
+      "completed": false,
+      "timestamp": "2024-08-07T11:45:00Z"
+    }
+  ]
+  
